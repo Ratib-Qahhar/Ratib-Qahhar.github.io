@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hidden Chest</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_left">
+            <a href="index.html"><img src="HCS_logo_original-red.png" alt=""></a>
+        </div>
+        <div class="nav_right">
+            <a href="games.html">GAMES</a>
+            <a href="about.html">ABOUT</a>
+            <a href="news.html">NEWS</a>
+        </div>
+
+    </nav>
+    <div class="games_header">
+        <h3>OUR GAMES</h3>
+    </div>
+    
+    <div class="games_m90">
+        <div>        
+        </div>
+        <button class="accordion">Info</button>
+        <div class="panel words">
+            <div>            
+                <h4>Midwest 90</h4>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Eveniet, consequuntur tempore.
+                Delectus cum eum ducimus, fugit quidem omnis labore 
+                laborum quisquam fuga nulla? Consectetur consequatur
+                 aliquam voluptatem, ullam doloribus illum!</p>
+            </div>
+            <div class="more_info">
+                <h4>Platform</h4>
+                <h3>PC</h3>
+            </div>
+        </div>
+        <button class="accordion">Media</button>
+        <div class="panel">
+            <div>
+                <img src="Gwendelyn_Concept_Art_02.jpg" alt="">
+                <img src="Header-M90-2-01.png" alt="">
+                <img src="Local_Customer 1 (Lakota_Male_1).jpg" alt="">
+                <img src="Prospector_Customer 1 (Male_1).jpg" alt="">
+                <img src="Veronica_Concept_Art.jpg" alt="">
+                <img src="Wallace_Kitchen_Chef.png" alt="">
+                <img src="pangolin-monster-final-polish-pose-base-color-bg-shade.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="games_m90 games_tycoon">
+        <div>        
+        </div>
+        <button class="accordion">Info</button>
+        <div class="panel words">
+            <div>            
+                <h4>Tycoon Zone</h4>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Eveniet, consequuntur tempore.
+                Delectus cum eum ducimus, fugit quidem omnis labore 
+                laborum quisquam fuga nulla? Consectetur consequatur
+                 aliquam voluptatem, ullam doloribus illum!</p>
+            </div>
+            <div class="more_info">
+                <h4>Platform</h4>
+                <h3>PC</h3>
+            </div>
+        </div>
+        <button class="accordion">Media</button>
+        <div class="panel">
+            <div>
+            </div>
+        </div>
+    </div>
+    <div class="games_m90 games_oasis">
+        <div>        
+        </div>
+        <button class="accordion">Info</button>
+        <div class="panel words">
+            <div>            
+                <h4>Tycoon Zone</h4>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Eveniet, consequuntur tempore.
+                Delectus cum eum ducimus, fugit quidem omnis labore 
+                laborum quisquam fuga nulla? Consectetur consequatur
+                 aliquam voluptatem, ullam doloribus illum!</p>
+            </div>
+            <div class="more_info">
+                <h4>Platform</h4>
+                <h3>PC</h3>
+            </div>
+        </div>
+        <button class="accordion">Media</button>
+        <div class="panel">
+            <div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <a href="index.html"><img src="HCS_logo_original-red.png" alt=""></a>
+        </div>
+        <div class="hidden">
+            <div class="top">
+                <h4>HIDDEN CHEST STUDIO</h4>
+            </div>
+            <div class="bottom">
+                <a href="games.html">Games</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="top">
+                <h4>CONTACT</h4>
+            </div>
+            <div class="bottom">            
+                <a href="mailto:hiddencheststudio@gmail.com">Email</a>
+                <a href="">Discord</a>
+            </div>
+        </div>
+        <div class="social">
+            <div class="top">
+                <h4>SOCIAL</h4>
+            </div>
+            <div class="bottom">
+                <a href="https://www.linkedin.com/company/hidden-chest-studio/?originalSubdomain=my" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/midwest90.rapidcity" target="_blank">Facebook</a>
+                <a href="https://www.youtube.com/channel/UCmIbMD_An0rvC5vHHoBsVXQ" target="_blank">Youtube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
+</script>
+</html>
