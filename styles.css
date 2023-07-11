@@ -128,7 +128,7 @@
 }
 
 .midwest_left h3{
-    font-family: 'texas';
+    /* font-family: 'texas'; */
     font-size: 30px;
     margin-bottom: 10%;
 }
@@ -165,7 +165,7 @@
 .midwest_right{
     height: 100%;
     width: 75%;
-    background-image: url('M90_Main_Menu_05.png');
+    background-image: url('ezgif.com-video-to-gif.gif');
     background-size: cover;
     background-repeat: no-repeat;
     /* transition: 1s; */
