@@ -652,7 +652,7 @@ footer{
   }
 
   .news_main{
-    justify-content: start;
+    /* justify-content: space-evenly; */
     flex-wrap: wrap;
     width: 90%;
     display: flex;
@@ -660,19 +660,96 @@ footer{
 
   .news_tab{
     color: #eee;
-    /* outline: 1px solid red; */
-    margin: 1% 1% 1% 0;
-    padding: 0 2%;
+    padding: 1%;
     width: 20vw;
+    height: 70vh;
     border-radius: 1rem;
     background-color: #6b6b69;
     font-family: 'license_plate';
+    margin: 15px 30px  15px 0;
   }
 
   .news_tab > h1{
     margin: 20px 0;
+    height: 5vh;
   }
 
-  .news_tab > p{
-    margin-bottom: 20px;
+  .news_tab p{
+    height: 20vh;
   }
+
+  /* .news_tab > p{
+    margin-bottom: 20px;
+  } */
+  
+.slider {
+    width: 100%;
+    height: 35vh;
+    /* margin: 5% 0; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.slider > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 30vh;
+    /* border-radius: 1rem; */
+    background: #ffffff;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+  .slides img{
+    width: 100%;
+    height: 100%;
+}
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slider > a:active {
+    top: 1px;
+}
+
+.slider > a:focus {
+    background: #000;
+}
