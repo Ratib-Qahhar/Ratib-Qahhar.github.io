@@ -614,7 +614,6 @@ footer > div{
     height: 100%;
     width: 50%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 .logo img{
@@ -650,4 +649,30 @@ footer{
   footer a:hover{
     color: rgb(255, 20, 52);
     transition: 0.5s ease;
+  }
+
+  .news_main{
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 90%;
+    display: flex;
+  }
+
+  .news_tab{
+    color: #eee;
+    /* outline: 1px solid red; */
+    margin: 1% 1% 1% 0;
+    padding: 0 2%;
+    width: 20vw;
+    border-radius: 1rem;
+    background-color: #6b6b69;
+    font-family: 'license_plate';
+  }
+
+  .news_tab > h1{
+    margin: 20px 0;
+  }
+
+  .news_tab > p{
+    margin-bottom: 20px;
   }
